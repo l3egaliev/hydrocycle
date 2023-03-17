@@ -1,0 +1,742 @@
+@font-face {
+    font-family: "SF Pro Display ";
+    font-weight: 700;
+    src: url(/fonts/SFProDisplay-Black.woff2);
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 300;
+    src: url(/fonts/SFProDisplay-Light.woff2); 
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 400;
+    src: url(/fonts/SFProDisplay-Regular.woff2);
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 600;
+    src: url(/fonts/SFProDisplay-Semibold.woff2);
+}
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 500;
+    src: url(/fonts/SFProDisplay-Medium.woff2);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    width: 100%;
+}
+body{
+    font-size: 20px;
+    font-family: "SF Pro Display", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.nav1{
+    margin-top: 25px;
+}
+.nav1-list{
+    display: flex;
+    align-items: center;
+}
+.nav1-item:not(:nth-child(3)){
+    margin-right: 50px;
+}
+.nav1-item:nth-child(3){
+    margin-right: 92px;
+}
+.nav1-item:nth-child(4){
+    margin-right: 105px;
+}
+.nav1-item:nth-child(5){
+    margin-right: 86px;
+}
+.nav1-link{
+    color: #2F3035;
+    font-size: 20px;
+    font-weight: 700;
+}
+.gps-icon{
+    display: inline-block;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/img/gps.svg);
+    width: 24px;
+    height: 30px;
+}
+.nav1-icon{
+    display: inline-block;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+}
+.nav1-icon:not(:last-child){
+    margin-right: 10px;
+}
+.icon-favorite{
+    width: 24px;
+    height: 22px;
+    background-image: url(/img/favorites.svg);
+}
+.icon-avatar{
+    width: 24px;
+    height: 24px;
+    background-image: url(/img/avatar.svg);
+}
+.icon-shop{
+    width: 30px;
+    height: 22px;
+    background-image: url(img/shop.svg);
+}
+.nav{
+    margin-top: 21px;
+    background-color: #F0F0F4;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-item{
+    padding: 15px 0;
+}
+.nav-link{
+    color: #2F3035;
+    font-weight: 400;
+    position: relative;
+}
+.nav-link::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #1C62CD;
+    transition: width .2s ease-in;
+    margin-top: 15px;
+}
+.nav-item:not(:nth-child(3)):hover .nav-link::after
+{
+    width: 100%;
+}
+
+.nav-link-active{
+    font-weight: 600;   
+    border-bottom: 3px solid #1C62CD;
+    padding-bottom: 15px;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+.swiper-container{
+    display: inline-block;
+    width: 870px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.slide1,
+.slide2,
+.slide3
+{
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 870px;
+    height: 400px;
+}
+.slide1{
+    background-image: url(/img/слайдер\ баннер.png);
+}
+
+.slide2{
+    background-image: url(https://service-boats.ru/wp-content/uploads/2020/01/2019-Yamaha-GP1800-EU-Azure_Blue_Metallic-Action-006.jpg);
+}
+.slide3{
+    background-image: url(https://flybro.ru/images/prokat/Gidr/gidrocikly-71.jpg);
+}
+.swiper-pagination{
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+}
+.arrows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow{
+    position: absolute;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 28px;
+    top: 50%;
+    margin-left: 10px;
+}
+.arrow1{
+    background-image: url(/img/стрелка\ влево.svg);
+}
+.arrow2{
+    background-image: url(/img/стрелка\ вправо.svg);
+    right: 10px;
+}
+.dots{
+    display: flex;
+    align-items: center;
+}
+.dot{
+    display: inline-block;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 11px;
+    height: 11px;
+    bottom: 40px;
+    right: 50%;
+}
+.dot-active{
+    margin-right: 15px;
+}
+.dot1{
+    margin-right: 30px;
+}
+.dot2{
+    margin-right: 45px;
+}
+.dot3{
+    margin-right: 60px;
+}
+.dot4{
+    margin-right: 75px;
+    background-color: #fff;
+}
+.stocks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    border-top-left-radius: 2px;
+    margin-left: 36px;
+}
+
+.stocks-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.stocks-link{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 20px;
+    background-color: #1C62CD;
+    margin-right: 54px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.stocks-price{
+    color: #1C62CD;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 7px;
+    padding-top: 6px;
+}
+.price-icon{
+    display: inline-block;
+    background-size: contain;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/img/icons8-рубль-50.svg);
+    width: 15px;
+    height: 18px;
+}
+.stocks-price2{
+    position: relative;
+    color: #C4C4C4;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-right: 4px;
+}
+.stocks-price2::after{
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 1.5px;
+    background-color: #C4C4C4;
+    right: 6px;
+    top: 49%;
+    transform: rotate(-10deg);
+}
+.price-icon2{
+    display: inline-block;
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 9.34px;
+    background-image: url(/img/Union.svg);
+}
+.stocks-img{
+    display: block;
+    background-color: transparent;
+    background-position: center;
+    background-image: url(/img/438d21d0914ff349e903072c903b7b8a\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 125px;
+    height: 176.69px;
+    margin: 0 61px;
+    margin-bottom: 5px;
+}
+.stocks-desc{
+    color: #2F3035;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 21px;
+}
+.stocks-footer{
+    background-color: #F0F0F4;
+    padding: 25px 40px;
+    text-align: center;
+    margin-top: 7px;
+}
+.stocks-footer-desc{
+    color: #2F3035;
+    font-size: 18px;
+    font-weight: 400;
+}
+.stocks-footer-desc2{
+    color: #1C62CD;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.hero-list{
+    margin-top: 88px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.hero-items:not(:last-child){
+    margin-right: 28px;
+}
+.hero-link{
+    color: #2F3035;
+    font-weight: 400;
+}
+.hero-items-active{
+    background-color: #F0F0F4;
+    padding: 12px 26px;
+    border-radius: 4px;
+}
+.hero-link-active{
+    font-weight: 700;
+}
+.hero-search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.hero-search-inp{
+    background-color: #F0F0F4;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    width: 100%;
+}
+.hero-search button{
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #1C62CD;
+    padding: 16px 40px;
+    font-size: 14px;
+    border-radius: 3px;
+    font-weight: 700;
+    border: none;
+}
+.hero-search button:active{
+    transform: translate(1px, -1px);
+    box-shadow: 1px 1px 0px #1C62CD;
+}
+
+.products-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+.products-item{
+    display: flex;
+    align-items: center;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    padding: 20px 20px 14px 20px;
+    margin-bottom: 30px;
+}
+.products-item:hover{
+    background-color: #F0F0F4;
+}
+.active-product{
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    border: none;
+}
+.active-product:hover{
+    background-color: transparent;
+}
+.products-item:not(:last-child){
+    margin-right: 30px;
+}
+.products-img{
+    display: inline-block;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.products-img-kvad{
+    width: 130px;
+    height: 100px;
+    background-image: url(/img/CFMOTO-X6-EPS_blue\ 1.svg);
+}
+.products-img-gid{
+    width: 152px;
+    height: 81px;
+    background-image: url(/img/jet_ski_PNG90\ 1.svg);
+}
+.products-img-kat{
+    width: 207px;
+    height: 101px;
+    background-image: url(/img/boat_PNG36\ 1.png);
+}
+.products-img-vez{
+    width: 157px;
+    height: 101px;
+    background-image: url(/img/2018-Maverick-X3-X-rc-TURBO-R-Carbon-Black-and-Octane-Blue_3-4-front4072\ 1.png);
+}
+.products-img-sneg{
+    width: 165px;
+    height: 105px;
+    background-image: url(/img/rmvector551\ 1.png);
+}
+.products-img-dvig{
+    width: 165px;
+    height: 103px;
+    background-image: url(/img/438d21d0914ff349e903072c903b7b8a\ 1.png);
+}
+
+.products-title{
+    margin-bottom: 52px;
+    margin-right: 12px;
+    color: #2F3035;
+    font-weight: 700;
+    font-size: 23px;
+}
+.products-title-active{
+    color: #1C62CD;
+}
+.products-link{
+    color: #C4C4C4;
+    font-weight: 400;
+    font-size: 14px;
+}   
+.products-link:hover {
+    color: #2F3035;
+} 
+.products-link-icon{
+    display: inline-block;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/img/Back.svg);
+    width: 6px;
+    height: 9px;
+    margin-left: 3px;
+}
+.popular-title{
+    font-size: 25px;
+    font-weight: 700;
+    color: #2F3035;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+.popular-nav-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.popular-nav-item:not(:last-child){
+    margin-right: 50px;
+} 
+
+.popular-nav-link{
+    color: #2F3035;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+}
+.popular-nav-link::after{
+    display: block;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #1C62CD;
+    position: absolute;
+    transition: width .2s ease-in;
+}
+.popular-nav-link-active::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #1C62CD;
+    position: absolute;
+    transition: width .2s ease-in;
+}
+.popular-nav-item:hover .popular-nav-link::after{
+    width: 100%;
+}
+.popular-list{
+    display: flex;
+    flex-basis: 25%;
+    justify-content: space-between;
+    padding-bottom: 35px;
+}
+.popular-item{
+    border: 1px solid #CDCDCD;
+    padding: 16px 19px;
+    position: relative;
+    border-radius: 3px;
+    align-items: center;
+
+}
+.popular-item:not(:last-child){
+    margin-right: 30px;
+}
+.popular-icon{
+    display: inline-block;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/img/Vector.svg);
+    width: 24px;
+    height: 22px;
+    right: 20px;
+}
+.popular-img{
+    display: block;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 14px;
+}
+.backpack-img{
+    background-image: url(/img/backpack.png);
+}
+.airflow-img{
+    background-image: url(/img/air.png);
+}
+.brp-img{
+    background-image: url(/img/s-l225\ 1.png);
+}
+.saver-img{
+    background-image: url(/img/saver.png);
+}
+.popular-desc{
+    color: #2F3035;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 25px;
+    max-width: 200px;
+}
+.popular-price{
+    color: #2F3035;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.popular-link{
+    position: absolute;
+    right: 0;
+    background-color: #1C62CD;
+    bottom: 0; 
+    padding: 10px 7.5px 2px 14px;
+    border: none;
+    border-top-left-radius: 10px;
+}
+.popular-link-icon{
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/img/shop1.svg);
+    width: 30px;
+    height: 22px;
+    z-index: 1;
+}
+.sale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    color: #fff;
+    background-color: #1C62CD;
+    font-size: 12px;
+    padding: 6px 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.brp-link{
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    font-size: 20px;
+    color: #2F3035;
+    background-color: #fff;
+    opacity: .9;
+    padding: 18px 22px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.brp-text{
+    color: #1C62CD;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 26px;
+}
+.brp-price{
+    color: #1C62CD;
+}
+.popular-item-brp{
+    border: none;
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+.saver-price{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+.saver-link-text{
+    color: #1C62CD;
+    font-size: 16px;
+    text-align: center;
+}
+.popular-btn{
+    padding: 17px 43px;
+    background-color: #F0F0F4;
+    display: inline-block;
+    display: block;
+    text-align: center;
+    max-width: 253px;
+    margin: 0 auto;
+    color: #2F3035;
+    text-transform: uppercase;
+    letter-spacing: 12% ;
+    font-size: 15px;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C62CD;
+    padding: 33px 71px;
+    margin-top: 86px;
+    margin-bottom: 72px;
+}
+.banner-item:nth-child(1){
+    margin-right: 46px;
+}
+.banner-item:nth-child(2){
+    margin-right: 40px;
+}
+.banner-img{
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.banner-img1{
+    width: 152px;
+    height: 116px;
+    background-image: url(/img/CFMOTO-X6-EPS_blue\ 1.svg);
+}
+.banner-img2{
+    width: 175px;
+    height: 113px;
+    background-image: url(/img/2018-Maverick-2.svg);
+}
+.banner-title{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #fff;
+    max-width: 308px;
+    letter-spacing: 2px;
+}
+.banner-btn{
+    color: #2F3035;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 10px 41px;
+    border: 1px solid #fff;
+    transition: all .1s ease-in;
+}
+.banner-btn:hover{
+    background-color: transparent;
+    color: #fff;
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav1">
+                <ul class="nav1-list">
+                    <li class="nav1-item">
+                        <a href="" class="nav1-link">Магазины</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="" class="nav1-link">Акции</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="" class="nav1-link">Доставка и оплата</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="" class="logo">
+                            <img src="img/лого.svg" alt="" class="logo-img">
+                        </a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="" class="nav1-link"><span class="gps-icon"></span> Москва,  ул. Науки  25</a>
+                    </li>
+                    <li class="nav1-item">
+                        <button class="nav1-icon icon-favorite"></button>
+                        <button class="nav1-icon icon-avatar"></button>
+                        <button class="nav1-icon icon-shop"></button>
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Квадроциклы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Катера</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link nav-link-active">Гидроциклы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Лодки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Вездеходы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Снегоходы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Двигатели</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Запчасти</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+     
+    </header>
+    <section class="hero">
+        <div class="container hero-container">
+                <!-- Slider main container -->
+            <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide ">
+                <span class="slide1"></span>
+            </div>
+            <div class="swiper-slide">
+                <span class="slide2"></span>
+            </div>
+            <div class="swiper-slide">
+                <span class="slide3"></span>
+            </div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" style="color: #fff"></div>
+            <div class="swiper-button-next" style="color: #fff"></div>
+
+            <!-- If we need scrollbar -->
+            </div>    
+            <div class="stocks">
+                <div class="stocks-header">
+                    <div class="stocks-head">
+                        <a href="" class="stocks-link">Акция</a>
+                        <h3 class="stocks-price">190 000 <span class="price-icon"></span></h3>
+                    </div>
+                </div>
+                <h4 class="stocks-price2">225 000 <span class="price-icon2"></span></h4>
+                <div class="stocks-img"></div>
+                <p class="stocks-desc">Лодочный мотор Suzuki DF9.9BRS</p>
+                <div class="stocks-footer">
+                    <p class="stocks-footer-desc">Акция действует до</p>
+                    <p class="stocks-footer-desc2">31.08.2020</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="hero-list">
+                <li class="hero-items">
+                    <a href="" class="hero-link">
+                        Поиск по номеру
+                    </a>
+                </li>
+                <li class="hero-items hero-items-active">
+                    <a href="" class="hero-link hero-link-active">
+                        Поиск по марке
+                    </a>
+                </li>
+                <li class="hero-items">
+                    <a href="" class="hero-link">
+                        Поиск по названию товара
+                    </a>
+                </li>
+            </ul>
+            <div class="hero-search">
+                <input type="text" placeholder="Введите марку"  class="hero-search-inp">
+                <button>Искать</button>
+            </div>
+            <ul class="products-list">
+                <li class="products-item">
+                    <div class="products-texts">
+                        <h2 class="products-title">Квадроциклы</h2>
+                        <a href="" class="products-link">Подробее <span class="products-link-icon"></span></a>
+                    </div>
+                    <div class="products-img products-img-kvad"></div>
+                </li>
+                <li class="products-item active-product">
+                    <div class="products-texts">
+                        <h2 class="products-title products-title-active">Гидроциклы</h2>
+                        <a href="" class="products-link">Подробее <span class="products-link-icon"></span></a>
+                    </div>
+                    <div class="products-img products-img-gid"></div>
+                </li>
+                <li class="products-item">
+                    <div class="products-texts">
+                        <h2 class="products-title">Катера</h2>
+                        <a href="" class="products-link">Подробее <span class="products-link-icon"></span></a>
+                    </div>
+                    <div class="products-img products-img-kat"></div>
+                </li>
+                <li class="products-item">
+                    <div class="products-texts">
+                        <h2 class="products-title">Снегоходы</h2>
+                        <a href="" class="products-link">Подробее <span class="products-link-icon"></span></a>
+                    </div>
+                    <div class="products-img products-img-sneg"></div>
+                </li>
+                <li class="products-item">
+                    <div class="products-texts">
+                        <h2 class="products-title">Вездеходы</h2>
+                        <a href="" class="products-link">Подробее <span class="products-link-icon"></span></a>
+                    </div>
+                    <div class="products-img products-img-vez"></div>
+                </li>
+                <li class="products-item">
+                    <div class="products-texts">
+                        <h2 class="products-title products-title-active">Двигатели</h2>
+                        <a href="" class="products-link">Подробее <span class="products-link-icon"></span></a>
+                    </div>
+                    <div class="products-img products-img-dvig"></div>
+                </li>
+            </ul>
+        </div>
+     </section>
+     <section  class="popular">
+         <div class="container">
+            <h2 class="popular-title">Популярные товары</h2>
+            <nav class="popular-nav">
+                <ul class="popular-nav-list">
+                    <li class="popular-nav-item popular-nav-item-active">
+                        <a href="" class="popular-nav-link popular-nav-link-active">запчасти</a>
+                    </li>
+                    <li class="popular-nav-item">
+                        <a href="" class="popular-nav-link">моторы</a>
+                    </li>
+                    <li class="popular-nav-item">
+                        <a href="" class="popular-nav-link">шины</a>
+                    </li>
+                    <li class="popular-nav-item">
+                        <a href="" class="popular-nav-link">электроника</a>
+                    </li>
+                    <li class="popular-nav-item">
+                        <a href="" class="popular-nav-link">инструменты</a>
+                    </li>
+                    <li class="popular-nav-item">
+                        <a href="" class="popular-nav-link">аксессуары</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="popular-content">
+                <ul class="popular-list">
+                    <li class="popular-item">
+                        <button class="popular-icon"></button>
+                        <div class="popular-img backpack-img"></div>
+                        <p class="popular-desc">Водонепроницаемый Рюкзак</p>
+                        <p class="popular-price">9 800 ₽</p>
+                        <button class="popular-link">
+                            <span class="popular-link-icon"></span>
+                        </button>
+                    </li>
+                    <li class="popular-item">
+                        <a href="" class="sale">sale</a>
+                        <button class="popular-icon"></button>
+                        <div class="popular-img airflow-img"></div>
+                        <p class="popular-desc">Спасательный жилет BRP Men's Airflow PFD</p>
+                        <p class="popular-price">6 900 ₽</p>
+                        <button class="popular-link">
+                            <span class="popular-link-icon"></span>
+                        </button>
+                    </li>
+                    <li class="popular-item popular-item-brp">
+                        <button class="popular-icon"></button>
+                        <div class="popular-img brp-img"></div>
+                        <a href="" class="brp-link">посмотреть товар</a>
+                        <a href=""><p class="brp-text popular-desc">BRP Audio-Premium System</p></a>
+                        <p class="popular-price brp-price">68 000 ₽</p>
+                        <button class="popular-link">
+                            <span class="popular-link-icon"></span>
+                        </button>
+                    </li>
+                    <li class="popular-item">
+                        <a href="" class="sale">sale</a>
+                        <button class="popular-icon"></button>
+                        <div class="popular-img saver-img"></div>
+                        <p class="popular-desc">Спасательное снаряжение</p>
+                        <p class="popular-price saver-price">нет в наличии</p>
+                        <a href="" class="saver-link"><p class="saver-link-text">Сообщить о поступлении</p></a>
+                    </li>
+                </ul>
+                <a href="" class="popular-btn">Показать еще</a>
+                <ul class="banner">
+                    <li class="banner-item">
+                        <span class="banner-img banner-img1"></span>
+                        <span class="banner-img banner-img2"></span>
+                    </li>
+                    <li class="banner-item">
+                        <h2 class="banner-title">
+                            CКИДКИ <br> на все запчасти до 70%
+                        </h2>
+                    </li>
+                    <li class="banner-item">
+                    <a href="" class="banner-btn">
+                            посмотреть все
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+         </div>
+     </section>
+    <script src="swiper.js"></script>
+</body>
+</html>
